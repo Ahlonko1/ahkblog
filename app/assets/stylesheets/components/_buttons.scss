@@ -1,11 +1,9 @@
-.btn-primary {
-background-color: white;
-border-color: black;
-border-radius: 100px;
-}
-
-.btn-secondary {
-  background-color: white;
-  border-color: black;
+.projects {
+  width: 150px;
+  height: 150px;
   border-radius: 100px;
+  &:hover{
+    background-color: #FF3B25;
+    color: white;
+}
 }
