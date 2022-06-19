@@ -20,9 +20,11 @@
       <button class="projects">
         <h5>Projects</h5>
       </button>
-      <button class="projects">
-        <h5>Contact</h5>
-      </button>
+      <%= link_to new_contact_path do %>
+        <button class="projects">
+          <h5>Contact</h5>
+        </button>
+      <% end %>
     </div>
   </div>
 </div>

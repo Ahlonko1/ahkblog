@@ -1,23 +1,35 @@
-<div class="container">
-  <h1>Contact Form</h1>
-  <%= form_for @contact do |f| %>
-    <div class="col-md-6">
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+<div class="container d-flex">
+  <div class="container2 p-5">
+  <h1>Contact</h1>
+  <p>Looking forward to hearing from you</p>
+  <h3>Phone</h3>
+  <p>+33 (0) 6 95 65 83 51</p>
+  <h3>Email</h3>
+  <p>ahlonko.kowouvi@gmail.com</p>
+  </div>
+  <div class="container3 p-5">
+    <%= form_for @contact do |f| %>
+      <div class="col-md-6">
+        <%= f.label :first_name %></br>
+        <%= f.text_field  :first_name, required: true, class: "contact-form-text-area" %></br>
 
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+        <%= f.label :last_name %></br>
+        <%= f.text_field  :last_name, required: true, class: "contact-form-text-area" %></br>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-            placeholder: "Send me a message"%></br>
+        <%= f.label :email %></br>
+        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
 
-      <div class= "d-none">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+        <%= f.label :message %></br>
+        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+              placeholder: "Send me a message"%></br>
+
+        <div class= "d-none">
+          <%= f.label :nickname %>
+          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+
+        <%= f.submit 'Submit', class: 'projects' %>
       </div>
-
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
