@@ -14,9 +14,11 @@
     <p>Feel free to reach out to me.</p>
 
     <div class="d-flex justify-content-around">
-      <button class="cta">
-        <h5>Resume</h5>
-      </button>
+      <%= link_to resume_index_path do %>
+        <button class="cta">
+          <h5>Resume</h5>
+        </button>
+      <% end %>
       <button class="cta">
         <h5>Projects</h5>
       </button>
