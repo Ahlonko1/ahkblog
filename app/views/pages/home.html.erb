@@ -19,9 +19,11 @@
           <h5>Resume</h5>
         </button>
       <% end %>
-      <button class="cta">
-        <h5>Projects</h5>
-      </button>
+      <%= link_to projects_path do %>
+        <button class="cta">
+          <h5>Projects</h5>
+        </button>
+      <% end %>
       <%= link_to new_contact_path do %>
         <button class="cta">
           <h5>Contact</h5>
