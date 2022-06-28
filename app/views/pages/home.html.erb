@@ -1,34 +1,38 @@
 <div class="container d-flex p-5">
-  <img src="https://kitt.lewagon.com/placeholder/users/Ahlonko1" alt="logo">
-  <div class="container2">
-    <h1><strong>Hello</strong></h1>
-    <h3><strong>Who am I?</strong></h3>
-    <p>What makes me as happy as Larry? When my code works!!</p>
-    <p>After 8 years in Accounting, Tax and Finance,
-    I recently endeavoured in the tech world by following the Web development bootcamp at Le Wagon and enjoyed it!
-    Indeed coding suits my analytical background and my thirst to always keep learning as well as triggering my inner creativity.</p>
-    <p>My previous experiences have provided me with the abilities to prioritize tasks and work on multiple assignments at the same time.
-    I have also demonstrated adaptability in international environments and shown solid managerial skills.</p>
-    <p>Today, I have SQL, Ruby, Ruby on Rails, Bootstrap, CSS, HTML, Git/Github and JavaScript under my belt.
-    I am therefore looking for any challenging opportunity that will help my next professional chapter start with a bang.</p>
-    <p>Feel free to reach out to me.</p>
+  <div class="row">
+    <div class="col-12 col-lg-3">
+      <img src="https://kitt.lewagon.com/placeholder/users/Ahlonko1" alt="logo">
+    </div>
+    <div class="col-12 col-lg-9">
+      <h1><strong>Hello</strong></h1>
+      <h3><strong>Who am I?</strong></h3>
+      <p>What makes me as happy as Larry? When my code works!!</p>
+      <p>After 8 years in Accounting, Tax and Finance,
+      I recently endeavoured in the tech world by following the Web development bootcamp at Le Wagon and enjoyed it!
+      Indeed coding suits my analytical background and my thirst to always keep learning as well as triggering my inner creativity.</p>
+      <p>My previous experiences have provided me with the abilities to prioritize tasks and work on multiple assignments at the same time.
+      I have also demonstrated adaptability in international environments and shown solid managerial skills.</p>
+      <p>Today, I have SQL, Ruby, Ruby on Rails, Bootstrap, CSS, HTML, Git/Github and JavaScript under my belt.
+      I am therefore looking for any challenging opportunity that will help my next professional chapter start with a bang.</p>
+      <p>Feel free to reach out to me.</p>
 
-    <div class="d-flex justify-content-around">
-      <%= link_to resume_index_path do %>
-        <button class="cta">
-          <h5>Resume</h5>
-        </button>
-      <% end %>
-      <%= link_to projects_path do %>
-        <button class="cta">
-          <h5>Projects</h5>
-        </button>
-      <% end %>
-      <%= link_to new_contact_path do %>
-        <button class="cta">
-          <h5>Contact</h5>
-        </button>
-      <% end %>
+      <div class="d-flex justify-content-around">
+        <%= link_to resume_index_path do %>
+          <button class="cta">
+            <h5>Resume</h5>
+          </button>
+        <% end %>
+        <%= link_to projects_path do %>
+          <button class="cta">
+            <h5>Projects</h5>
+          </button>
+        <% end %>
+        <%= link_to new_contact_path do %>
+          <button class="cta">
+            <h5>Contact</h5>
+          </button>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
